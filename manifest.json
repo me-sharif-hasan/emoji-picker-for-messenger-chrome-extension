@@ -1,0 +1,16 @@
+{
+	"name": "Messenger Fast emoji",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "This extension will provide fast access to the emoji so that it is easy to insert",
+	"content_scripts":[
+		{
+		"js":["ii_emoji.js"],
+		"matches":["http://*/*", "https://*/*"],
+		"run_at": "document_end"
+		}
+	],
+	"web_accessible_resources": [
+		"data/emoji.html"
+	]
+}
